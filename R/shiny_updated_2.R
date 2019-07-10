@@ -1,5 +1,4 @@
 #shiny app version
-#PERHAPS CAN REQUEST A VM FROM IT SERVICES TO HOST THESE??
 library(shiny)
 library(shinydashboard)
 library(shinyAce)
@@ -9,12 +8,7 @@ library(magrittr)
 library(magick)
 library(purrr)
 library(dplyr)
-#special install for EBImage
-library(devtools)
-#on first call
-#install_github("jkh1/EBImage")
-#then call the below line
-library(EBImage)
+library(EBImage) #*** This is a doctured version of the package from install_github("jkh1/EBImage") that allows locating pixel position when clicking. Devtools will need to be installed inorder to install from github directly.
 library(abind)
 library(snow)
 library(mapview)
